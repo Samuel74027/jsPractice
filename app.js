@@ -33,8 +33,18 @@ print out the last value inside an array
 //let search = fullName.includes("S");
 //This return a boolean
 
-let score = "100";
-score = Number(score);
-//the score is being converted from string to number
-let type = typeof score;
-console.log(type);
+// let score = "100";
+// score = Number(score);
+// the score is being converted from string to number
+// score = String(score);
+// the score is being converted from number to string
+// let type = typeof score;
+// console.log(type);
+
+// let result = Boolean('')
+// empty string = false
+// any length of string = true
+
+// let result = Boolean(0)
+// num <= 0 will be false
+// num > 0 will be true
