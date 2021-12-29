@@ -17,7 +17,6 @@ console.log(`My first name has ${firstName.length} letters.`);
 
 //Array Method
 let names = ["James", "Curry", "Chris"];
-console.log(names[2]);
 
 /*
 let join = names.join(",");
@@ -48,3 +47,64 @@ print out the last value inside an array
 // let result = Boolean(0)
 // num <= 0 will be false
 // num > 0 will be true
+
+//for loop
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+// }
+
+// // while loop
+// let i = 0;
+// while (i < names.length) {
+//   console.log(names[i]);
+//   i++;
+// }
+
+// // do while loop
+// let num = 2;
+// do {
+//   console.log(names[num]);
+//   num++;
+// } while (num < 1);
+
+// // if statements
+// let password = "bruh";
+// if (password.length >= 8) {
+//   console.log("Your password is long enough");
+// } else {
+//   console.log("Your password is not long enough");
+// }
+
+// //logical operator &&-and ||-or
+
+// // break and continue
+// let scores = [0, 90, 100, 60];
+// for (i = 0; i < scores.length; i++) {
+//   if (scores[i] <= 60) {
+//     continue;
+//   }
+//   console.log(`Your score on test ${i + 1} is ${scores[i]}`);
+//   if (scores[i] === 100) {
+//     console.log("Congrats bro! You got a 100.");
+//     break;
+//   }
+// }
+
+// switch
+let grade = 70;
+switch (grade) {
+  case 90:
+    console.log("You got an A");
+    break;
+  case 80:
+    console.log("You got an B");
+    break;
+  case 70:
+    console.log("You got an C");
+    break;
+  case 60:
+    console.log("You got an D");
+    break;
+  default:
+    console.log("You got an F");
+}
