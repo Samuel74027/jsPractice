@@ -5,14 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .blue {
+        color: blue;
+        font-weight: bold;
+      }
+      .red {
+        color: red;
+        border: dotted red 5px;
+        font-size: 50px;
+      }
+      .green {
+        color: green;
+        border: dotted green 5px;
+        font-size: 50px;
+      }
+      .biggertext {
+        font-size: 100px;
+        font-weight: bold;
+        border: dotted 10px blue;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is the page title</h1>
-    <p>I think the color looks super cool</p>
-    <ol class="list"></ol>
-    <h1 class="info1" style="color: blue"></h1>
-    <h1 class="info2" style="color: red"></h1>
-
+    <h1 id="title" style="color: red">Title</h1>
+    <ul>
+      <li>milk</li>
+      <li>beef</li>
+      <li>fruit</li>
+    </ul>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+      >My Gmail</a
+    >
+    <p class="red" style="margin: 200px">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      itaque?
+    </p>
+    <section class="red">Section for testing classes</section>
+    <div>
+      <h6>This is a red text</h6>
+      <h6>This is a green text</h6>
+      <h6>This is a red text</h6>
+      <h6>This is a green text</h6>
+      <h6>This is a red text</h6>
+      <h6>This is a green text</h6>
+      <h6>This is a red text</h6>
+      <h6>This is a green text</h6>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
