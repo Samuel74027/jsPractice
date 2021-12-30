@@ -1,22 +1,22 @@
-let firstName = "Sam";
-let lastName = "Lee";
-let fullName = `${firstName} ${lastName}`;
-//String Method
-//let index = fullName, index('u');
-//let lastindex = fullName.lastIndexOf("u");
-//console.log(fullName.slice(0, index));
-//console.log(fullName.substr(0, 6));
-//let result = fullName.replace("a", "w");
-const radius = 10;
-const pi = 3.14;
-let area = pi * radius ** 2;
-console.log(area);
-let age = 16;
-console.log(`My name is ${fullName} and my age is ${age}.`);
-console.log(`My first name has ${firstName.length} letters.`);
+// let firstName = "Sam";
+// let lastName = "Lee";
+// let fullName = `${firstName} ${lastName}`;
+// //String Method
+// //let index = fullName, index('u');
+// //let lastindex = fullName.lastIndexOf("u");
+// //console.log(fullName.slice(0, index));
+// //console.log(fullName.substr(0, 6));
+// //let result = fullName.replace("a", "w");
+// const radius = 10;
+// const pi = 3.14;
+// let area = pi * radius ** 2;
+// console.log(area);
+// let age = 16;
+// console.log(`My name is ${fullName} and my age is ${age}.`);
+// console.log(`My first name has ${firstName.length} letters.`);
 
-//Array Method
-let names = ["James", "Curry", "Chris"];
+// //Array Method
+// let names = ["James", "Curry", "Chris"];
 
 /*
 let join = names.join(",");
@@ -90,21 +90,103 @@ print out the last value inside an array
 //   }
 // }
 
-// switch
-let grade = 70;
-switch (grade) {
-  case 90:
-    console.log("You got an A");
-    break;
-  case 80:
-    console.log("You got an B");
-    break;
-  case 70:
-    console.log("You got an C");
-    break;
-  case 60:
-    console.log("You got an D");
-    break;
-  default:
-    console.log("You got an F");
-}
+// // switch
+// let grade = 70;
+// switch (grade) {
+//   case 90:
+//     console.log("You got an A");
+//     break;
+//   case 80:
+//     console.log("You got an B");
+//     break;
+//   case 70:
+//     console.log("You got an C");
+//     break;
+//   case 60:
+//     console.log("You got an D");
+//     break;
+//   default:
+//     console.log("You got an F");
+// }
+
+//function
+// const calcArea = function (side1 = 0, side2 = 0) {
+//   return side1 * side2;
+// };
+
+//Arrow function
+// const calcArea = (side1 = 0, side2 = 0) => {
+//   return side1 * side2;
+// };
+
+// console.log(calcArea());
+
+// const greet = () => {
+//   return "hello world";
+// };
+
+// const bill = (products, tax) => {
+//   let total = 0;
+//   let i = 0;
+//   while (i < products.length) {
+//     total += products[i] + products[i] * tax;
+//     i++;
+//   }
+//   return total;
+// };
+
+// console.log(bill([10, 15, 30], 0.2));
+
+//using foreach to insert value into HTML
+
+// const result = document.querySelector(".result");
+// const people = ["Sam", "John", "Eric"];
+// let text = ``;
+
+// people.forEach((person) => {
+//   text += `<li style="color: blue;">${person}</li>`;
+// });
+
+// result.innerHTML = text;
+
+//object literals
+let list = document.querySelector(".list");
+let me = {
+  myName: "Samuel",
+  age: 16,
+  highSchool: "American High School",
+  myEmail: [
+    "samuel.yenlin@gmail.com",
+    "yenlee027@fusdk12.net",
+    "yenlin@gmail.com",
+  ],
+  account: [
+    { username: "Samuel33333", password: "Samuel940428" },
+    { username: "John", password: "John940428" },
+  ],
+  logAccount: function () {
+    console.log("Here are the accounts");
+    this.account.forEach((user) => {
+      console.log(
+        `Your username is ${user.username} and your password is ${user.password}`
+      );
+    });
+  },
+  login: () => {
+    return "You are logged in";
+  },
+  logout: () => {
+    return "You are logged out";
+  },
+  printEmail: () => {
+    let i = 0;
+    let input = ``;
+    while (i < me.myEmail.length) {
+      input += `<li>${me.myEmail[i]}</li>`;
+      i++;
+    }
+    list.innerHTML = input;
+  },
+};
+
+me.logAccount();
